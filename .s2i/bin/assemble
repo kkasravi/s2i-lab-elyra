@@ -4,6 +4,8 @@ set -eox pipefail
 
 APP_ROOT=${APP_ROOT:-/opt/app-root/src}
 
+pip install elyra=2.2.4
+
 # Run the original Python S2I assemble script to install packages.
 
 /usr/libexec/s2i/assemble
